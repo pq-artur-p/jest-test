@@ -22,9 +22,9 @@ jobs:
      - name: install project modules
        run:  cd examples && cd example-app-v14 && npm i
      - name: test normal
-       run: npm run test
+       run: cd examples && cd example-app-v14 && npm run test
      - name: test esm
-       run: npm run test-esm
+       run: cd examples && cd example-app-v14 && npm run test-esm
     #  - name: build production project
     #    run: npm run build:prod
     #    if: always()
